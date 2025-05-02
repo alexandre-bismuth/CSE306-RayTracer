@@ -3,6 +3,7 @@
 
 #include <random>
 #include <omp.h>
+#include "vector.h"
 
 #define M_PI 3.14159265358979323846264338327950288
 #define MAX_THREADS 10 // Obtained from running omp_get_max_threads()
