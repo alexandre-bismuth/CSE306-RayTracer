@@ -67,14 +67,12 @@ int main(int argc, char **argv)
 				// Depth of Field
 				const double lensR = aperture * sqrt(radius);
 				const Vector focalPt = cameraOrigin + rayDir * focusDist;
-				const Vector lensOffset = u * (lensR * cos(angle)) + v * (lensR * sin(angle));
+				const Vector lensOffset = lensR * cos(angle) * u + lensR * sin(angle) * v;
 
 				const Vector rayOrig = cameraOrigin + lensOffset;
-				const Vector finalRayDir = normalize(focalPt - rayOrig);
-				Ray ray(rayOrig, finalRayDir);
+				Ray ray(rayOrig, normalize(focalPt - rayOrig));
 
-				const Vector color = scene.getColor(ray, bounceNumber);
-				accumulatedColor += color;
+				accumulatedColor += scene.getColor(ray, bounceNumber);
 			}
 
 			const Vector finalColor = accumulatedColor / double(raysPerPixel);
