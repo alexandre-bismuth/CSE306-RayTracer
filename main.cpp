@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 	const unsigned char bounceNumber = 5;
 	const double fieldOfView = 60. * M_PI / 180.;
 	const double aperture = (mode == "combined") ? 0.75 : 0.;
-	const double focusDist = 30.;
+	const double focusDist = 25.;
 	const bool useSpheres = (mode == "spheres" || mode == "combined");
 	const bool useCat = (mode == "cat" || mode == "combined");
 

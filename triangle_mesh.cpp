@@ -492,6 +492,9 @@ void TriangleMesh::BVH(Node *node, int &startTriangle, int &endTriangle)
 			pivotIndex++;
 		}
 	}
+	if (pivotIndex == startTriangle || pivotIndex == endTriangle)
+		pivotIndex = 0.5 * (startTriangle + endTriangle);
+
 	if (startTriangle + 5 > endTriangle || pivotIndex <= startTriangle || pivotIndex + 1 >= endTriangle)
 		return;
 
