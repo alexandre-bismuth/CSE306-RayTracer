@@ -1,7 +1,7 @@
 #ifndef TRIANGLE_INDICES_H
 #define TRIANGLE_INDICES_H
 
-// Code based on the given Pastebin (https://pastebin.com/CAgp9r15)
+// Code from the given Pastebin (https://pastebin.com/CAgp9r15)
 
 class TriangleIndices
 {

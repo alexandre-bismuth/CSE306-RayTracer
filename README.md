@@ -1,6 +1,7 @@
 # CSE306 Ray Tracer Project
 
 Author : Alexandre Bismuth
+
 The full report for this project can be found in raytracer_report.pdf
 
 ## Project Overview
@@ -17,7 +18,7 @@ This project implements a handcrafted ray tracer. It includes the following elem
 - Interpolation (optional)
 - Textures (optional)
 
-The only missing element is area light source. Multiple pictures relating to implemented features can be found in the ```/output``` directory.
+The only missing element is area light source. Multiple pictures relating to implemented features can be found in the ```output``` directory.
 
 ## Bibliography
 

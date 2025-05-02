@@ -21,7 +21,7 @@ public:
     const unsigned long lightIntensity;
     std::vector<Sphere> spheres;
     TriangleMesh *catMesh;
-    bool useSpheres, useCat;
+    const bool useSpheres, useCat;
 };
 
 #endif

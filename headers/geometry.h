@@ -15,7 +15,7 @@ public:
     virtual bool intersect(const Ray &ray, IntersectionInfo &rayIntersection) = 0;
 
     const Vector center, albedo;
-    bool isMirror, isTransparent, invertNormal, isFresnel;
+    const bool isMirror, isTransparent, invertNormal, isFresnel;
 };
 
 #endif
