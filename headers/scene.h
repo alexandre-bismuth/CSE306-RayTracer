@@ -9,6 +9,7 @@ class Scene
 public:
     Scene(const Vector &lightPosition, unsigned long lightIntensity, bool useSpheres, bool useCat)
         : lightPosition(lightPosition), lightIntensity(lightIntensity), useSpheres(useSpheres), useCat(useCat) {};
+    ~Scene();
 
     void initEnvironment();
     void initSpheres();

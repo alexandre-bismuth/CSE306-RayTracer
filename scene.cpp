@@ -1,6 +1,15 @@
 #include "headers/scene.h"
 #include "headers/utils.h"
 
+Scene::~Scene()
+{
+    if (catMesh)
+    {
+        delete catMesh->rootNode;
+        delete catMesh;
+    }
+}
+
 bool Scene::intersect(const Ray &ray, IntersectionInfo &rayIntersection)
 {
     bool intersected = false;

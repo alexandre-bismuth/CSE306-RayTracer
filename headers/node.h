@@ -6,6 +6,7 @@ class Node
 {
 public:
     Node() : leftChild(nullptr), rightChild(nullptr) {};
+    ~Node() = default;
 
     int startTriangle, endTriangle;
     BoundingBox boundingBox;
