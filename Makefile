@@ -4,7 +4,6 @@ LDFLAGS = -lomp -L/opt/homebrew/opt/libomp/lib
 
 SOURCES = bounding_box.cpp main.cpp sphere.cpp scene.cpp triangle_mesh.cpp vector.cpp 
 TARGET = main
-OUTPUT_IMAGE = image.png
 
 $(TARGET): $(SOURCES)
 	$(CXX) $(CXXFLAGS) $(SOURCES) -o $(TARGET) $(LDFLAGS)
